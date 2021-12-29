@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investor Adventure!</title></head>
+<body>
+	<div class="center">
+<section class="section">
+    <div class="container">
+      <h1 class="title">
+        Breakdown
+      </h1>
+      
+      <br>
+        <p class="subtitle">Company Picked: <%= ticker %></p>
+        <br>
+         <br>
+        <p class="subtitle">Amount Invested: $<%= amountInvested %></p>
+        <br>
+         <br>
+        <p class="subtitle">Result: <%= result %></p>
+        <br>
+        <p class="subtitle">
+        current balance: $<%= currentBalance %>
+      </p>
+      <br>
+      <br>
+            <a href=http://localhost:4000/<%= nextStage %>/<%= currentBalance %>>
+      <button class="button is-success">Continue</button></a>
+
+
+    </div>
+  </section></div></body></html>
