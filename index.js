@@ -47,6 +47,6 @@ app.get('/:ticker/:amountInvested/:currentBalance/:nextStage', (req, res) => {
 
   res.render("investmentResult",{ticker:tickerSymbol,amountInvested:investmentAmount,nextStage:stage,currentBalance:balance,result:result})
 })
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(process.env.PORT || 4000, function(){
+    console.log('Your node js server is running');
+});
