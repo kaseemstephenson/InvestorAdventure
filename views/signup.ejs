@@ -25,19 +25,20 @@
         Investor Adventure!
       </h1>
       <p class="subtitle">
-        Welcome Back <%=userName%>
+        -by Kaseem Stephenson
       </p>
       <br>
-      <strong>Starting Amount: $1000</strong>
-      <strong>Longest Streak: <%= lStreak %></strong>
-
+      <strong>Please Sign up</strong>
       <br>
-      <a href=../1/1000>
-
-      <button class="button is-success">Begin</button></a>
-            <a href=/logout>
-
-            <button class="button is-danger">Log Out</button></a>
-
+      <form action="/signup" method="POST">
+  <label for="fname">Please enter a username to save your progress..</label><br>
+ <input class="input is-success" type="text" name="userName">
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span> 
+    <br>
+    <br>
+     <input class="button is-success" type="submit" value="Submit">
+</form> 
     </div>
   </section></div></body></html>
